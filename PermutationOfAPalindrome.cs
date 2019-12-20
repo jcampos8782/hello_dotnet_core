@@ -12,6 +12,8 @@ namespace hello_dotnet_core
         // CASE INSENSITIVE
         static void PermutationOfPalindromes()
         {
+            Console.WriteLine("Checking if strings are permutations of palindromes");
+
             // If the length of the string is even, all characters must appear
             // an even number of times. If the length of the string is odd,
             // exactly one character must have an odd count.
