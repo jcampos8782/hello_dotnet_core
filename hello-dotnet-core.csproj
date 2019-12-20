@@ -6,4 +6,7 @@
     <RootNamespace>hello_dotnet_core</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Word.cs" />
+  </ItemGroup>
 </Project>

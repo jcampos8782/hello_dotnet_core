@@ -2,6 +2,7 @@ using System;
 
 namespace hello_dotnet_core 
 {
+    // Contrived class for checking word properties
     class Word 
     {
 
