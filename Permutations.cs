@@ -33,20 +33,16 @@ namespace hello_dotnet_core
                     return;
                 }
 
-                // Now make sure string a has every character from string b
-                foreach (char c in a)
-                {
-                    if (!b.Contains(c))
-                    {
-                        WriteIsPermutation(a, b, false);
-                        return;
-                    }
-                }
+                // Now sort the two strings and compare them index by index
+                char[] aChars = a.ToCharArray();
+                char[] bChars = b.ToCharArray();
 
-                // Must also make sure every char in b is in a!
-                foreach (char c in b)
+                Array.Sort(aChars);
+                Array.Sort(bChars);
+
+                for (int i = 0; i < a.Length; i++)
                 {
-                    if (!a.Contains(c))
+                    if (aChars[i] != bChars[i])
                     {
                         WriteIsPermutation(a, b, false);
                         return;
