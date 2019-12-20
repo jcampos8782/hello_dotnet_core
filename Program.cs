@@ -14,6 +14,8 @@ namespace hello_dotnet_core
             Break();
             CheckPermutations();
             Break();
+            PermutationOfPalindromes();
+            Break();
         }
 
         private static void Break()
